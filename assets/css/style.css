@@ -6,7 +6,8 @@
   --primary-color: #ffb900;
 }
 html {
-  font-size: 62.5%;
+  /* Quy ước để 10px = 1rem */
+  font-size: 62.5%; 
 }
 body {
   font-size: 1.6rem;
@@ -25,7 +26,7 @@ a {
   letter-spacing: -0.76px;
 }
 .main-content {
-  width: 1170px;
+  width: 1170px; /* Kích thước chung của website */
   max-width: calc(100% - 48px);
   margin-left: auto;
   margin-right: auto;
