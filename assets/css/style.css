@@ -7,7 +7,7 @@
 }
 html {
   /* Quy ước để 10px = 1rem */
-  font-size: 62.5%; 
+  font-size: 62.5%;
 }
 body {
   font-size: 1.6rem;
@@ -46,6 +46,19 @@ a {
 .btn:hover {
   opacity: 0.9;
   cursor: pointer;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+.break-all {
+  word-break: break-all;
 }
 
 /* ================header=================== */
@@ -282,6 +295,7 @@ a {
   margin-top: 55px;
 }
 .popular .course-item {
+  flex: 1;
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background: #fff;
